@@ -1,5 +1,11 @@
 [build]
   publish = "."
+  command = ""
+  ignore = "git diff --quiet HEAD^ HEAD ./index.html ./styles.css ./app.js"
+
+# Tell Netlify this is a static site, don't try to process or build anything
+[build.processing]
+  skip_processing = true
 
 # Redirect all requests to index.html for Single Page Applications
 [[redirects]]
