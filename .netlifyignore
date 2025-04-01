@@ -1,0 +1,25 @@
+# Ignore Python tools directory
+/tools/
+*.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ignore any potential Python package files
+requirements.txt
+pyproject.toml
+setup.py
+Pipfile
+Pipfile.lock
+
+# Ignore any environment variables
+.env 
